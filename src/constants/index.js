@@ -1,0 +1,6 @@
+export const ACTION_TYPES = {
+    ADD_NOTE: 'ADD_NOTE',
+    REMOVE_NOTE: 'REMOVE_NOTE',
+    EDIT_NOTE: 'EDIT_NOTE',
+    ADD_COLOR: 'ADD_COLOR'
+};
