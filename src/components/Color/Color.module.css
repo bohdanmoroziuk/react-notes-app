@@ -1,0 +1,38 @@
+.root {
+    display: flex;
+}
+
+.switch {
+    display: none;
+}
+
+.marker {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: grey;
+    position: relative;
+}
+
+.marker:hover {
+    cursor: pointer;
+}
+
+.switch:checked ~ .marker::after {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    
+    display: block;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.root + .root {
+    margin-left: 10px;
+}
