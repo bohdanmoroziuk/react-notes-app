@@ -39,9 +39,22 @@ img {
 }
 
 button {
-    border: none;
+    border: none;   
+    background-color: transparent;
 }
 
 button:hover {
     cursor: pointer;
+}
+
+.icon {
+    color: grey;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.icon + .icon {
+    margin-left: 5px;
 }
