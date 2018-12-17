@@ -49,7 +49,7 @@ class NoteEditor extends React.Component {
                 </textarea>
                 <div className={styles.control}>
                     <button className="button-reset" type="submit">
-                        <i class="icon fas fa-plus"></i>
+                        <i className="icon fas fa-plus"></i>
                     </button>
                 </div>
             </form>
