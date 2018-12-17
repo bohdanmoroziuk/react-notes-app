@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Note from '../../models/Note';
 import { addNote } from '../../actions';
 import styles from './NoteEditor.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class NoteEditor extends React.Component {
     constructor(props) {
@@ -49,7 +50,7 @@ class NoteEditor extends React.Component {
                 </textarea>
                 <div className={styles.control}>
                     <button className="button-reset" type="submit">
-                        <i className="icon fas fa-plus"></i>
+                        <FontAwesomeIcon className="icon" icon="plus" size="sm" />
                     </button>
                 </div>
             </form>
