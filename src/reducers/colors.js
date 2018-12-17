@@ -1,6 +1,6 @@
 import { ACTION_TYPES } from '../constants';
 
-const initialState = [];
+const initialState = [ 'grey', '#0095dd', 'crimson' ];
 
 const colorsReducer = (state = initialState, action) => {
     switch(action.type) {

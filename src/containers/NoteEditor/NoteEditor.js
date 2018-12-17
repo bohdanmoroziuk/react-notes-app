@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Note from '../../models/Note';
 import { addNote } from '../../actions';
+import ColorPalette from '../../containers/ColorPalette/ColorPalette';
 import styles from './NoteEditor.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -37,7 +38,7 @@ class NoteEditor extends React.Component {
     }
 
     render() {
-        const { text, color } = this.state;
+        const { text } = this.state;
 
         return (
             <form className={styles.root} onSubmit={this.handleSubmit}>
@@ -49,6 +50,7 @@ class NoteEditor extends React.Component {
                     onChange={this.handleChange}>
                 </textarea>
                 <div className={styles.control}>
+                    <ColorPalette handleSelect={this.handleChange} />
                     <button className="button-reset" type="submit">
                         <FontAwesomeIcon className="icon" icon="plus" size="sm" />
                     </button>

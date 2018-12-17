@@ -16,6 +16,11 @@ export const editNote = (id, note) => ({
     note
 });
 
+export const searchNote = (value) => ({
+    type: ACTION_TYPES.SEARCH_NOTE,
+    value
+});
+
 export const addColor = (color) => ({
     type: ACTION_TYPES.ADD_COLOR,
     color

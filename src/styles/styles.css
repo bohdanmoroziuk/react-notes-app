@@ -47,14 +47,10 @@ button:hover {
     cursor: pointer;
 }
 
-.icon {
-    color: grey;
-}
-
-.icon:hover {
-    cursor: pointer;
-}
-
-.icon + .icon {
+button + button {
     margin-left: 5px;
+}
+
+.icon {
+    color: #eaeaea;
 }
