@@ -1,7 +1,7 @@
 import { ACTION_TYPES } from '../constants';
 
 export const addNote = (note) => ({
-    type: ACTION_TYPES.ADD_COLOR,
+    type: ACTION_TYPES.ADD_NOTE,
     note
 });
 
