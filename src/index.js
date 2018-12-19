@@ -6,7 +6,7 @@ import rootReducer from './reducers/root';
 import App from './components/App/App';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEdit, faTrashAlt, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faEdit, faTrashAlt, faPlus, faSave } from '@fortawesome/free-solid-svg-icons'
 import './styles/styles.css';
 import * as serviceWorker from './serviceWorker';
 import Database from './database/Database';
@@ -17,7 +17,12 @@ const store = createStore(rootReducer, initialState);
 
 const RootElement = document.getElementById('root');
 
-library.add(faEdit, faTrashAlt, faPlus);
+library.add(
+    faEdit, 
+    faTrashAlt, 
+    faPlus, 
+    faSave
+);
 
 store.subscribe(() => {
     Database.set(store.getState());
