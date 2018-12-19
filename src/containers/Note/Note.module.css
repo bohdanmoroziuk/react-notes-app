@@ -11,7 +11,10 @@
 }
 
 .text {
+    border: none;
+    resize: none;
     color: #eaeaea;
+    background-color: transparent;
 }
 
 /* .datetime {
