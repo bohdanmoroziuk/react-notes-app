@@ -14,7 +14,7 @@ const notesReducer = (state = initialState, action) => {
         case ACTION_TYPES.EDIT_NOTE:
             return { ...state, list: state.list.map(note => {
                 return note.id === action.id
-                    ? { ...note, ...action.note }
+                    ? { ...note, text: action.text }
                     : note;
             }) };
         case ACTION_TYPES.SEARCH_NOTE:

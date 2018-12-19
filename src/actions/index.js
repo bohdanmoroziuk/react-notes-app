@@ -10,10 +10,10 @@ export const removeNote = (id) => ({
     id
 });
 
-export const editNote = (id, note) => ({
+export const editNote = (id, text) => ({
     type: ACTION_TYPES.EDIT_NOTE,
     id,
-    note
+    text
 });
 
 export const searchNote = (value) => ({
